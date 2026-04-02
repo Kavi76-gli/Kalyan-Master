@@ -1,0 +1,16 @@
+{
+  "name": "kalyan-app",
+  "version": "1.0.0",
+  "description": "Landing page with Meta Pixel + CAPI tracking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "kavi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.14.0",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1"
+  }
+}
