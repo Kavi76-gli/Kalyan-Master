@@ -3,335 +3,955 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Secure Mobile App</title>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '4583990428547129');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4583990428547129&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
+<title>Kalyan & Gali Master App | Trusted & Genuine Master Platform</title>
+<meta name="description" content="Play Kalyan, Gali and popular Games markets on a trusted and genuine Master app. Fast system, smooth gameplay, and real-time results. Download official APK now.">
+<meta name="keywords" content="kalyan master, gali master, satta master app, dpboss master, kalyan result, gali result, master app">
+<meta name="robots" content="index, follow">
+<head>
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+--bg:#020617;
+--card:#0f172a;
+--neon:#38bdf8;
+--soft:rgba(56,189,248,.25);
+--text:#e5e7eb;
+--muted:#94a3b8;
 }
 
 body{
-  background: radial-gradient(circle at top, #0f172a, #020617);
-  color:#fff;
+font-family:Inter,system-ui,sans-serif;
+background:radial-gradient(circle at top,#020617,#000);
+color:var(--text);
+line-height:1.6;
+}
+
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{
+position:sticky;top:0;z-index:100;
+background:rgba(2,6,23,.9);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--soft);
+}
+.nav{
+max-width:1200px;margin:auto;
+display:flex;align-items:center;justify-content:space-between;
+padding:1rem;
+}
+.nav img{width:200px}
+.nav ul{list-style:none;display:flex;gap:1.5rem}
+.nav a{color:var(--muted);font-weight:600}
+.nav a:hover{color:var(--neon);text-shadow:0 0 10px var(--neon)}
+
+/* HERO */
+.hero{
+max-width:1200px;margin:auto;
+padding:5rem 1rem;
+display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:3rem;align-items:center;
+}
+.hero h1{
+font-size:clamp(2.4rem,5vw,3.8rem);
+font-weight:900;
+background:linear-gradient(90deg,#38bdf8,#22d3ee,#60a5fa);
+-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero p{margin-top:1rem;color:var(--muted);font-size:1.1rem}
+.badges{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.2rem 0}
+.badges span{
+padding:.4rem .9rem;border-radius:999px;
+border:1px solid var(--soft);
+background:rgba(56,189,248,.12);
+font-size:.85rem;
+}
+.download{
+display:inline-block;margin-top:1.4rem;
+padding:1rem 2.5rem;border-radius:16px;
+font-weight:800;color:#020617;
+background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+box-shadow:0 0 40px rgba(56,189,248,.8);
+transition:.3s;
+}
+.download:hover{transform:scale(1.08);box-shadow:0 0 80px rgba(56,189,248,1)}
+
+.phone{
+max-width:320px;margin:auto;
+border-radius:28px;overflow:hidden;
+border:2px solid var(--soft);
+box-shadow:0 0 60px rgba(56,189,248,.6);
+}
+.phone img{width:100%;display:block}
+
+/* SECTIONS */
+section{padding:5rem 1rem}
+.title{text-align:center;max-width:760px;margin:0 auto 3rem}
+.title h2{
+font-size:clamp(2rem,4vw,3rem);
+color:var(--neon);text-shadow:0 0 20px var(--neon)
+}
+.title p{color:var(--muted);margin-top:.6rem}
+
+/* CARDS */
+.grid{
+max-width:1200px;margin:auto;
+display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:2rem;
+}
+.card{
+background:var(--card);
+padding:2rem;border-radius:22px;
+border:1px solid var(--soft);
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 60px rgba(56,189,248,.45);
+}
+.card h3{color:var(--neon);margin-bottom:.6rem}
+
+/* SLIDER */
+.slider{
+overflow:hidden;max-width:1200px;margin:auto
+}
+.track{
+display:flex;gap:1.2rem;
+animation:scroll 22s linear infinite;
+}
+.track img{
+width:220px;border-radius:20px;
+box-shadow:0 0 40px rgba(56,189,248,.4)
+}
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+/* TABLE */
+.table-wrap{max-width:1000px;margin:auto;overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th,td{padding:1rem}
+thead{background:rgba(2,6,23,.9)}
+th{color:var(--neon)}
+tbody tr:hover{background:rgba(56,189,248,.08)}
+
+/* CONTACT */
+form input,form textarea{
+width:100%;padding:1rem;border-radius:12px;
+border:none;background:#020617;color:#fff;margin-bottom:1rem
+}
+
+/* FOOTER */
+footer{
+background:#020617;border-top:1px solid var(--soft);
+padding:3rem 1rem;
+}
+.footer{
+max-width:1200px;margin:auto;
+display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:2rem;
+}
+footer h4{color:var(--neon);margin-bottom:.8rem}
+footer p,footer a{color:var(--muted);font-size:.9rem}
+footer a:hover{color:var(--neon)}
+.copy{text-align:center;margin-top:2rem;color:var(--muted);font-size:.85rem}
+
+
+
+
+/* HEADER */
+.header {
+  height: 76px;
+  background: linear-gradient(180deg, #000000, #050505);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(212,175,55,0.45);
+}
+
+/* LOGO AREA */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO IMAGE – CLEAR & PREMIUM */
+.logo img {
+  height: 64px;          /* 🔥 bigger = clarity */
+  width: auto;
+  object-fit: contain;
+  filter: 
+    contrast(1.25)
+    brightness(1.15);
+}
+
+
+/* RIGHT ICONS */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ICON STYLE */
+.header-icons i {
+  font-size: 20px;
+  color: #d4af37;             /* gold tone */
+  cursor: pointer;
+}
+body{padding-bottom:90px}
+/* PHONE PREVIEW */
+.phone-preview{
   display:flex;
   justify-content:center;
-  padding:15px;
 }
 
-/* GLASS BOX */
-.box{
-  width:100%;
-  max-width:420px;
-  padding:22px;
-  border-radius:20px;
-  background:rgba(255,255,255,0.05);
-  backdrop-filter: blur(20px);
-  border:1px solid rgba(255,255,255,0.1);
-  box-shadow:0 0 40px rgba(56,189,248,.2);
-  text-align:center;
+.phone-frame{
+  width:320px;
+  height:640px;
+  border-radius:36px;
+  padding:12px;
+  background:#000;
+  box-shadow:
+    0 0 0 4px #111,
+    0 0 40px rgba(56,189,248,.6);
   position:relative;
-  overflow:hidden;
 }
 
-/* GLOW EFFECT */
-.box::before{
+/* NOTCH */
+.phone-frame::before{
   content:"";
   position:absolute;
-  width:200%;
-  height:200%;
-  background:radial-gradient(circle, rgba(56,189,248,.2), transparent);
-  top:-50%;
-  left:-50%;
-  animation:rotateGlow 8s linear infinite;
+  top:8px;
+  left:50%;
+  transform:translateX(-50%);
+  width:120px;
+  height:18px;
+  background:#000;
+  border-radius:0 0 14px 14px;
+  z-index:2;
 }
 
-/* TIMER */
-.timer{
-  font-size:12px;
-  color:#facc15;
-  margin-bottom:10px;
-}
-
-/* IMAGE */
-.app-img{
+/* SCREEN */
+.phone-frame img{
   width:100%;
-  max-width:220px;
-  border-radius:16px;
-  margin:12px 0;
-  box-shadow:0 0 25px rgba(56,189,248,.6);
-}
-
-/* TITLE */
-h1{
-  font-size:22px;
-  font-weight:900;
-  background:linear-gradient(90deg,#38bdf8,#22d3ee,#0ea5e9);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-/* TEXT */
-p{
-  font-size:13px;
-  color:#cbd5f5;
-  margin-top:8px;
-  line-height:1.6;
-}
-
-/* PREMIUM BUTTON */
-.btn{
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  margin-top:16px;
-  padding:15px;
-  border-radius:14px;
-  font-weight:800;
-  font-size:15px;
-  color:#fff;
-  background:linear-gradient(135deg,#25D366,#16a34a);
-  text-decoration:none;
-  cursor:pointer;
-  overflow:hidden;
-  transition:0.3s;
-  box-shadow:0 10px 30px rgba(0,255,100,.4);
-}
-
-/* ICON */
-.btn img{
-  width:20px;
-  height:20px;
-  animation:shake 2s infinite;
-}
-
-/* HOVER */
-.btn:hover{
-  transform:scale(1.05);
-  box-shadow:0 20px 40px rgba(0,255,100,.6);
-}
-
-/* LIGHT SWEEP */
-.btn::before{
-  content:"";
-  position:absolute;
-  width:50%;
   height:100%;
-  background:rgba(255,255,255,0.3);
-  top:0;
-  left:-60%;
-  transform:skewX(-25deg);
-  animation:sweep 3s infinite;
+  object-fit:cover;
+  border-radius:28px;
+  transition:opacity .6s ease;
 }
 
-/* FEATURES */
-.features{
-  margin-top:14px;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:8px;
+.game-section {
+  margin: 14px;
 }
 
-.features span{
-  font-size:10px;
-  padding:6px 10px;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(56,189,248,.3);
-  border-radius:20px;
-  backdrop-filter: blur(10px);
+.game-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #020b1d, #02142d);
+  box-shadow: 0 0 18px rgba(0,255,255,.25);
+  color: #bffcff;
 }
 
-/* RATE TITLE */
-.section-title{
-  margin-top:18px;
-  font-size:14px;
-  color:#38bdf8;
-  font-weight:700;
+.game-left {
+  display: flex;
+  gap: 14px;
+  align-items: center;
 }
 
-/* RATE BOX */
-.rate-box{
-  margin-top:8px;
-  padding:10px;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(56,189,248,.2);
-  border-radius:12px;
-  display:flex;
-  justify-content:space-between;
-  font-size:13px;
-  backdrop-filter: blur(10px);
+.game-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #00bfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #001;
 }
 
-.rate-box b{
-  color:#22d3ee;
+.game-info h3 {
+  margin: 0;
+  font-size: 18px;
 }
 
-/* FLOAT */
-.float-wa{
-  position:fixed;
-  bottom:80px;
-  right:20px;
-  background:#25D366;
-  padding:12px 14px;
-  border-radius:50px;
-  font-size:12px;
-  font-weight:700;
-  display:flex;
-  align-items:center;
-  gap:6px;
-  box-shadow:0 0 25px rgba(0,255,100,.6);
-  cursor:pointer;
+.time {
+  font-size: 14px;
+  opacity: .8;
 }
 
-/* STICKY */
-.sticky{
+.status {
+  font-size: 13px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.dot.open { background: #00ff99; }
+.dot.close { background: #00ff99; }
+
+.game-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.result {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.play-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #00bfff;
+  color: #001;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+</style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4583990428547129');
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=4583990428547129&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+
+<!-- End Meta Pixel Code -->
+<!-- NAVIGATION / HEADER -->
+<nav class="header">
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="k.jpeg" alt="Kalyan Master Logo">
+  </div>
+
+  <!-- HAMBURGER MENU -->
+  <div class="hamburger" id="hamburger" style="display:none;cursor:pointer;">
+    <div style="width:28px;height:3px;background:#d4af37;margin:6px 0;border-radius:2px;"></div>
+    <div style="width:28px;height:3px;background:#d4af37;margin:6px 0;border-radius:2px;"></div>
+    <div style="width:28px;height:3px;background:#d4af37;margin:6px 0;border-radius:2px;"></div>
+  </div>
+
+  <!-- MENU LINKS -->
+  <ul class="nav-links" id="nav-links" style="display:flex;gap:2rem;list-style:none;align-items:center;">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#screens">Screenshots</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div>
+    <h1 style="line-height:1.2;">
+       <span style="background:linear-gradient(90deg,#facc15,#f97316,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Kalyan Master</span>
+    </h1>
+    
+    <p style="margin-top:1rem;color:var(--muted);font-size:1.15rem;">
+      Play real Games markets like Kalyan, Gali, and more on a secure and reliable platform.  
+      Trusted by real players across India. Clear results, fast updates, and smooth gameplay.
+    </p>
+
+    <!-- BADGES -->
+    <div class="badges" style="margin-top:1.5rem;display:flex;gap:.8rem;flex-wrap:wrap;">
+      <span style="border:1px solid var(--soft);background:rgba(56,189,248,.12);color:#fff;">✅ Trusted Platform</span>
+      <span style="border:1px solid var(--soft);background:rgba(56,189,248,.12);color:#fff;">⚡ Fast Results</span>
+      <span style="border:1px solid var(--soft);background:rgba(56,189,248,.12);color:#fff;">🔒 Secure System</span>
+      <span style="border:1px solid var(--soft);background:rgba(56,189,248,.12);color:#fff;">📱 Android App</span>
+    </div>
+
+    <!-- APK DOWNLOAD BUTTON -->
+    <a class="download" href="apk/Kalyan Master.apk" style="display:inline-block;margin-top:1.5rem;">
+      Download APK
+    </a>
+  </div>
+</section>
+
+
+<!-- MOBILE APP PREVIEW -->
+<div class="phone-preview">
+  <div class="phone-frame">
+    <img id="appScreen" src="screens/screen1.png" alt="App Screen">
+  </div>
+</div>
+
+
+
+<section id="results">
+<div class="title">
+<h2>Live Games Results</h2>
+<p>Stay updated with latest market status</p>
+</div>
+
+<section id="games">
+
+  <!-- MORNING GAMES -->
+  <div class="game-card">
+    <h3>SITA MORNING</h3>
+    <p>09:40 AM – 10:40 AM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>KARNATAKA DAY</h3>
+    <p>10:00 AM – 11:00 AM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>SRIDEVI MORNING</h3>
+    <p>10:00 AM – 11:00 AM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MILAN MORNING</h3>
+    <p>10:20 AM – 11:20 AM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>ANDHRA MORNING</h3>
+    <p>10:35 AM – 11:35 AM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>RAJDHANI MORNING</h3>
+    <p>11:24 AM – 12:50 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MADHUR MORNING</h3>
+    <p>11:25 AM – 12:24 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>SRIDEVI</h3>
+    <p>11:30 AM – 12:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>KALYAN MORNING</h3>
+    <p>11:35 AM – 12:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MAHADEVI MORNING</h3>
+    <p>11:40 AM – 12:40 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MADHURI</h3>
+    <p>11:45 AM – 12:45 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <!-- DAY GAMES -->
+  <div class="game-card">
+    <h3>MAHARANI</h3>
+    <p>12:15 PM – 02:15 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>TIME BAZAR</h3>
+    <p>12:55 PM – 01:55 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MADHUR DAY</h3>
+    <p>01:25 PM – 02:25 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>PRABHAT</h3>
+    <p>01:30 PM – 03:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>SITA DAY</h3>
+    <p>01:40 PM – 02:40 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>TIME BAZAR DAY</h3>
+    <p>02:45 PM – 04:45 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MILAN DAY</h3>
+    <p>03:00 PM – 05:00 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>RAJDHANI DAY</h3>
+    <p>03:00 PM – 05:00 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>SUPREME DAY</h3>
+    <p>03:30 PM – 05:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>ANDHRA DAY</h3>
+    <p>03:30 PM – 05:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>KALYAN</h3>
+    <p>04:02 PM – 06:02 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MAHADEVI</h3>
+    <p>04:25 PM – 06:25 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <!-- NIGHT GAMES -->
+  <div class="game-card">
+    <h3>KARNATAKA NIGHT</h3>
+    <p>06:40 PM – 07:40 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>SITA NIGHT</h3>
+    <p>06:45 PM – 07:45 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>SRIDEVI NIGHT</h3>
+    <p>06:55 PM – 07:55 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MAHADEVI NIGHT</h3>
+    <p>07:35 PM – 08:35 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MADHUR NIGHT</h3>
+    <p>08:25 PM – 10:25 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>PRABHAT NIGHT</h3>
+    <p>08:30 PM – 10:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>SUPREME NIGHT</h3>
+    <p>08:30 PM – 10:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>ANDHRA NIGHT</h3>
+    <p>08:40 PM – 10:40 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MILAN NIGHT</h3>
+    <p>08:50 PM – 10:55 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>RAJDHANI NIGHT</h3>
+    <p>09:20 PM – 11:30 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>KALYAN NIGHT</h3>
+    <p>09:25 PM – 11:25 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+  <div class="game-card">
+    <h3>MAIN BAZAR</h3>
+    <p>09:50 PM – 11:50 PM</p>
+    <span class="result">— —</span>
+  </div>
+
+</section>
+
+
+<section>
+  <div class="title">
+    <h2>Why Players Trust Kalyan Master</h2>
+    <p>Built for genuine Kalyan players who value speed, clarity, and reliability</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>100% Genuine Markets</h3>
+      <p>
+        We provide authentic Kalyan, Gali, and other popular Games market results.
+        No fake data, no manipulation — only real market numbers.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Fast & Stable System</h3>
+      <p>
+        Our app is optimized for speed. Results update quickly with minimal delay,
+        even during peak market hours.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Trusted by Real Players</h3>
+      <p>
+        Thousands of regular Kalyan players use Kalyan Master daily
+        for accurate results and smooth gameplay experience.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Secure & Private</h3>
+      <p>
+        We respect user privacy. Your data stays protected with a secure system
+        and controlled access.
+      </p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="title">
+    <h2>How Kalyan Master Works</h2>
+    <p>Simple steps for a smooth Games experience</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>1. Install the App</h3>
+      <p>
+        Download and install the official Kalyan Master APK
+        directly from our website.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>2. Choose Market</h3>
+      <p>
+        Access popular Games markets like Kalyan, Gali, and more
+        with a clean and easy interface.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>3. Check Results</h3>
+      <p>
+        View live and updated results with clear open and close numbers,
+        without confusion.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>4. Play Responsibly</h3>
+      <p>
+        The app is designed for mature users (18+) who understand
+        responsible gameplay.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="card">
+  <h3>Is Kalyan Master a genuine Games app?</h3>
+  <p>
+    Yes. Kalyan Master is a trusted platform used by real Kalyan players.
+    We focus on accurate market results and system reliability.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Which Games markets are supported?</h3>
+  <p>
+    Popular markets including Kalyan, Gali, and other major Games
+    are available inside the app.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Is this app safe to use?</h3>
+  <p>
+    Yes. The app is designed with security and privacy in mind.
+    No unnecessary permissions are required.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Who can use this app?</h3>
+  <p>
+    This app is intended for users aged 18 and above
+    who understand responsible Games gameplay.
+  </p>
+</div>
+
+
+
+
+
+
+
+<section id="screens">
+<div class="title">
+<h2>Real App Screenshots</h2>
+<p>Actual interface used by players</p>
+</div>
+
+<div class="slider">
+<div class="track">
+<img src="r.png">
+<img src="L.png">
+<img src="g.png">
+<img src="w.png">
+
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="title">
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="grid">
+<div class="card"><h3>Is this a genuine Kalyan Master app?</h3><p>Yes, this is a trusted Kalyan Master platform used by real players.</p></div>
+<div class="card"><h3>Which markets are available?</h3><p>Kalyan, Gali and other popular Kalyan markets.</p></div>
+<div class="card"><h3>Is registration required?</h3><p>Registration helps manage gameplay and results smoothly.</p></div>
+<div class="card"><h3>Is the app safe?</h3><p>We maintain a secure and private system for users.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="title">
+<h2>Get In Touch</h2>
+<p>Support & assistance for players</p>
+</div>
+
+<div style="max-width:600px;margin:auto" class="card">
+<form action="mailto:support@kalyanmaster.in">
+<input placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button class="download" style="width:100%">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="footer">
+<div>
+<img src="k.jpeg" style="width:180px;margin-bottom:1rem">
+<p>Trusted Kalyan Master platform providing access to popular markets like Kalyan and Gali.</p>
+</div>
+
+<div>
+<h4>Quick Links</h4>
+<p><a href="#features">Features</a></p>
+<p><a href="#results">Results</a></p>
+<p><a href="#screens">Screenshots</a></p>
+<p><a href="#faq">FAQ</a></p>
+</div>
+
+<p style="margin-top:1rem;color:var(--muted);font-size:.85rem;text-align:center">
+This platform is intended for informational and entertainment purposes only.
+Users must be 18+ and follow local laws. Play responsibly.
+</p>
+
+
+
+<div>
+<h4>Legal</h4>
+<p><a href="#">Terms of Service</a></p>
+<p><a href="#">Privacy Policy</a></p>
+<p><a href="#">Disclaimer</a></p>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>Email: support@kalyanmaster.in</p>
+<p>18+ Responsible Play</p>
+</div>
+</div>
+
+<div class="copy">
+© 2026 Kalyan Master. All rights reserved.
+</div>
+</footer>
+
+
+<!-- FIXED BOTTOM INSTALL BAR -->
+<div id="bottom-bar" style="
   position:fixed;
   bottom:0;
   left:0;
   width:100%;
-  background:linear-gradient(90deg,#25D366,#16a34a);
-  padding:16px;
-  text-align:center;
-  font-weight:800;
-  cursor:pointer;
-  box-shadow:0 -5px 20px rgba(0,255,100,.4);
-}
+  background:rgba(2,6,23,0.95);
+  backdrop-filter:blur(12px);
+  border-top:1px solid var(--soft);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.8rem 1rem;
+  z-index:9999;
+  box-shadow:0 -2px 12px rgba(0,0,0,0.5);
+">
 
-/* ANIMATIONS */
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}
-  70%{box-shadow:0 0 0 20px rgba(37,211,102,0);}
-  100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
-}
+  <!-- LOGO -->
+  <div style="display:flex;align-items:center;gap:.6rem;">
+    <img src="k.jpeg" alt="Kalyan Master Logo" style="height:40px;object-fit:contain;">
+    <span style="color:var(--text);font-weight:600;"></span>
+  </div>
 
-@keyframes shake{
-  0%,100%{transform:rotate(0);}
-  25%{transform:rotate(-10deg);}
-  50%{transform:rotate(10deg);}
-  75%{transform:rotate(-10deg);}
-}
-
-@keyframes sweep{
-  0%{left:-60%;}
-  100%{left:120%;}
-}
-
-@keyframes rotateGlow{
-  0%{transform:rotate(0deg);}
-  100%{transform:rotate(360deg);}
-}
-</style>
-<meta name="theme-color" content="#25D366">
-</head>
-
-<body>
-
-<div class="box">
-
-<div class="timer">
-Redirecting in <span id="autoTimer">10</span> sec...
-</div>
-
-<img src="k.jpeg" class="app-img">
-
-<h1>Secure Mobile App</h1>
-
-<p>Access a private and secure mobile application with fast system and smooth UI experience.</p>
-
-<!-- BUTTON -->
-<a class="btn" onclick="goWhatsApp('https://wa.me/917412850353?text=Hi%20I%20want%20app%20access')">
-Get App Access
-</a>
-
-<div class="features">
-<span>🔒 Secure</span>
-<span>⚡ Fast</span>
-<span>💳 Wallet</span>
-<span>📱 Easy</span>
-</div>
-
-<div class="section-title">📊 Rate Structure</div> <div class="rate-box"><span>Single</span><b>1 : 9.5</b></div> <div class="rate-box"><span>Jodi</span><b>1 : 95</b></div> <div class="rate-box"><span>Panel (Single)</span><b>1 : 150</b></div> <div class="rate-box"><span>Panel (Double)</span><b>1 : 300</b></div> <div class="rate-box"><span>Panel (Triple)</span><b>1 : 1000</b></div> <div class="rate-box"><span>Half Sangam</span><b>1 : 1000</b></div> <div class="rate-box"><span>Full Sangam</span><b>1 : 10000</b></div>
-
-<!-- EXTRA BUTTON -->
-<a class="btn" onclick="goWhatsApp('https://wa.me/917412850353?text=Send%20Download%20Link')">
-Download Link
-</a>
+  <!-- INSTALL BUTTON -->
+  <a href="apk/Kalyan Master.apk" style="
+    padding:0.6rem 1.5rem;
+    border-radius:12px;
+    background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+    color:#020617;
+    font-weight:700;
+    box-shadow:0 0 20px rgba(56,189,248,.6);
+    transition:.3s;
+    text-decoration:none;
+  " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    Install App
+  </a>
 
 </div>
 
-<!-- FLOAT -->
-<div class="float-wa" onclick="goWhatsApp('https://wa.me/917412850353?text=Hi')">
-WhatsApp
-</div>
-
-<!-- STICKY -->
-<div class="sticky" onclick="goWhatsApp('https://wa.me/917412850353?text=Send%20Access')">
-Get Access on WhatsApp
-</div>
-
+<!-- JS FOR MENU TOGGLE -->
+<!-- JS FOR MENU TOGGLE -->
 <script>
-function generateEventId(){
-  return 'evt_' + Date.now() + '_' + Math.random().toString(36).substr(2,5);
-}
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
 
-function goWhatsApp(url){
+  // Toggle menu open/close
+  hamburger.addEventListener('click', () => {
+    if(navLinks.style.display === "flex" && window.innerWidth <= 768) {
+      navLinks.style.display = "none";
+    } else if(window.innerWidth <= 768) {
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "column";
+      navLinks.style.background = "rgba(2,6,23,0.95)";
+      navLinks.style.position = "absolute";
+      navLinks.style.top = "76px";
+      navLinks.style.right = "0";
+      navLinks.style.width = "100%";
+      navLinks.style.padding = "1rem 0";
+      navLinks.style.textAlign = "center";
+      navLinks.style.gap = "1.5rem";
+    }
+  });
 
-  let eventId = generateEventId();
+  // Close menu when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if(window.innerWidth <= 768) navLinks.style.display = "none";
+    });
+  });
 
-  // Pixel event with ID
-  fbq('track', 'Lead', {}, {eventID: eventId});
+  // RESPONSIVE: Show hamburger on small screens
+  function checkWidth() {
+    if(window.innerWidth <= 768){
+      hamburger.style.display = "block";
+      navLinks.style.display = "none";
+    } else {
+      hamburger.style.display = "none";
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "row";
+      navLinks.style.position = "static";
+      navLinks.style.background = "none";
+      navLinks.style.width = "auto";
+      navLinks.style.padding = "0";
+    }
+  }
 
-  // Send to server with same ID
-  fetch('/lead?event_id=' + eventId).catch(()=>{});
+const screens = [
+  "R.jpeg",
+  "l.jpeg",
+  "G.jpeg",
+  "W.jpeg",
+];
 
-  setTimeout(()=>{
-    window.location.href = url;
-  },300);
-}
+let index = 0;
+const img = document.getElementById("appScreen");
 
-// ⏱ TIMER
-let t = 10;
-let el = document.getElementById("autoTimer");
+setInterval(() => {
+  img.style.opacity = 0;
+  setTimeout(() => {
+    index = (index + 1) % screens.length;
+    img.src = screens[index];
+    img.style.opacity = 1;
+  }, 400);
+}, 2500);
 
-let interval = setInterval(()=>{
-  t--;
-  el.innerText = t;
-  if(t <= 0) clearInterval(interval);
-},1000);
+  window.addEventListener('resize', checkWidth);
+  window.addEventListener('load', checkWidth);
 
-// 🔥 AUTO REDIRECT (WITH TRACKING)
-setTimeout(()=>{
-  goWhatsApp("https://wa.me/917412850353?text=Auto%20Interested");
-},10000);
 
 </script>
+<!-- Meta Pixel Code -->
 
 </body>
 </html>
